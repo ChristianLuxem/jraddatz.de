@@ -1,0 +1,42 @@
+.header
+  display: flex
+  min-height: 100vh
+  padding: ($spacer * 2) $spacer
+  flex-direction: column
+  align-items: center
+
+.img
+  width: 350px
+  height: 350px
+  border-radius: 100%
+  box-shadow: $image-shadow
+  object-fit: cover
+  object-position: 90% 50%
+
+  @media screen and (max-width: 1200px)
+    width: 200px
+    height: 200px
+
+.title, .subtitle
+  color: $blue
+  text-align: center
+
+.title
+  margin-top: $spacer * 4
+  margin-bottom: 0
+  font-size: 60px
+  letter-spacing: -0.5px
+
+  @media screen and (max-width: 1200px)
+    margin-top: $spacer * 2
+
+.subtitle
+  margin-top: $spacer * 2
+  font:
+    size: 34px
+    weight: 200
+  letter-spacing: 0.25px
+  opacity: 0.9
+
+.header .btn-group
+  margin-top: $spacer * 4

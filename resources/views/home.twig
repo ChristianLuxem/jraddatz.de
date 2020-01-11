@@ -1,0 +1,27 @@
+{% extends 'templates/_default.twig' %}
+
+{% block title %}tech enthusiast // designer // developer{% endblock %}
+
+{% block content %}
+    {% if authenticated %}
+        {% include 'partials/_secret-content.twig' %}
+    {% else %}
+        <section id="more" class="section">
+            <div class="container">
+                <section class="text-section animate animate-from-left">
+                    <h3 class="section__heading">Kein Zugriff</h3>
+
+                    <div class="section__content">
+                        <p class="text">
+                            Sie haben leider keinen Zugriff auf die Inhalte dieser Seite.
+                            Wenn Sie mehr über mich erfahren möchten, können Sie mit mir Kontakt aufnehmen
+                            und so einen Zugang erhalten.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    {% endif %}
+
+    {% include 'partials/_contact.twig' %}
+{% endblock %}

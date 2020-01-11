@@ -1,0 +1,43 @@
+.btn-group
+  display: flex
+
+  @media screen and (max-width: 1200px)
+    flex-direction: column
+
+  .btn:nth-child(2)
+    margin-left: $spacer * 2
+
+    @media screen and (max-width: 1200px)
+      margin-top: $spacer
+      margin-left: 0
+
+.btn
+  display: block
+  padding: ($spacer * 0.75) ($spacer * 1.5)
+  background-color: $blue
+  color: $white
+  text-align: center
+  font:
+    size: 24px
+    weight: 600
+  border-radius: $spacer / 4
+  letter-spacing: 0.25px
+
+  &:focus
+    outline: none
+
+.btn--primary
+  text-transform: uppercase
+  box-shadow: $shadow--dark
+  letter-spacing: 1.25px
+
+  &:hover, &:focus
+    box-shadow: $shadow--dark--elevated
+
+.btn--secondary
+  background-color: $white
+  color: $blue
+  box-shadow: $shadow--light
+
+  &:hover, &:focus
+    box-shadow: $shadow--light--elevated

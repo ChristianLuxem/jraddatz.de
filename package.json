@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "@jraddatz99/jraddatz.de",
+  "description": "The source code of jraddatz.de.",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "Jasper Raddatz",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "postcss-import": "^12.0.1",
+    "webpack-stream": "^5.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jraddatz99/jraddatz.de.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jraddatz99/jraddatz.de/issues"
+  },
+  "homepage": "https://github.com/jraddatz99/jraddatz.de#readme"
+}

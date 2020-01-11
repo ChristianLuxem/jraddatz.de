@@ -1,0 +1,54 @@
+.animate
+  opacity: 0
+
+  &.visible
+    animation:
+      duration: .3s
+      timing-function: ease-in-out
+      fill-mode: forwards
+
+  @for $i from 1 through 5
+    &.delay-#{$i}
+      animation-delay: ($i * 100) * 1ms
+
+.animate-from-left
+  transform: translateX(-10px)
+
+  &.visible
+    animation-name: animate-from-left
+
+.animate-from-right
+  transform: translateX(10px)
+
+  &.visible
+    animation-name: animate-from-right
+
+.animate-from-bottom
+  transform: translateY(10px)
+
+  &.visible
+    animation-name: animate-from-bottom
+
+@keyframes animate-from-left
+  from
+    transform: translateX(-10px)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes animate-from-right
+  from
+    transform: translateX(10px)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes animate-from-bottom
+  from
+    transform: translateY(10px)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1

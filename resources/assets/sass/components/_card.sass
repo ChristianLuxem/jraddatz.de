@@ -1,0 +1,45 @@
+.cards
+  display: flex
+  justify-content: space-between
+
+  @media screen and (max-width: 1200px)
+    flex-direction: column
+
+.card
+  display: flex
+  margin-left: $spacer * 2
+  padding: ($spacer * 2) ($spacer * 4) ($spacer * 3)
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  text-align: center
+  background-color: $white
+  box-shadow: $shadow
+  border-radius: $spacer / 4
+
+  @media screen and (max-width: 1200px)
+    margin-top: $spacer * 2
+    margin-left: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: $shadow--elevated
+
+  &:first-child
+    margin-left: 0
+
+.card__icon
+  width: 75px
+
+.card__heading
+  margin-top: $spacer
+  font:
+    size: 34px
+    weight: 400
+  color: $blue
+
+.card__text
+  margin-top: $spacer * 2
+  font:
+    size: 20px
+    weight: 600

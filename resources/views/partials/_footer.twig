@@ -1,0 +1,28 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer__img">
+            <img class="img animate animate-from-left" src="/assets/images/me.jpg" alt="Portrait: Jasper Raddatz">
+        </div>
+
+        <div class="footer__text">
+            <p><strong class="title animate animate-from-right delay-1">Jasper Raddatz</strong></p>
+            <p class="subtitle animate animate-from-right delay-2">tech enthusiast // designer // developer</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="footer__nav animate animate-from-right delay-4">
+            <ul>
+                <li>
+                    <a href="{{ url_for('home') }}">Startseite</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('legal-notice') }}">Impressum</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('privacy-policy') }}">Datenschutz</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>

@@ -1,0 +1,28 @@
+.skills .section__content
+  display: flex
+  justify-content: space-between
+
+  @media screen and (max-width: 1200px)
+    flex-direction: column
+    align-items: center
+
+.soft-skills, .hard-skills
+  max-width: 500px
+
+.skills__label
+  font:
+    size: 34px
+    weight: 400
+
+.hard-skills
+  margin-left: $spacer * 4
+
+  @media screen and (max-width: 1200px)
+    margin-top: $spacer * 4
+    margin-left: 0
+
+  .skills__label
+    text-align: right
+
+  .tags
+    justify-content: flex-end

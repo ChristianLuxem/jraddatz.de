@@ -1,0 +1,21 @@
+{% extends 'templates/_default.twig' %}
+
+{% block title %}404 Seite nicht gefunden{% endblock %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <section class="text-section animate animate-from-left">
+                <h3 class="section__heading">404 Seite nicht gefunden</h3>
+
+                <div class="section__content">
+                    <p class="text">
+                        Sorry! Die angeforderte Seite konnte leider nicht gefunden werden.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    {% include 'partials/_contact.twig' %}
+{% endblock %}

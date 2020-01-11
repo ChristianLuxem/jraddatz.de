@@ -1,0 +1,74 @@
+.text-section
+  max-width: 700px
+  margin-top: $spacer * 7
+  padding: $spacer * 2
+  border-bottom: ($spacer / 4) solid $blue
+  border-right: ($spacer / 4) solid $blue
+  border-radius: ($spacer / 4)
+  box-shadow: $shadow
+
+  @media screen and (max-width: 1200px)
+    margin-top: $spacer * 4
+
+  &--full
+    max-width: none
+
+  &:first-child
+    margin-top: 0
+
+  &:nth-child(even)
+    margin-left: auto
+    border-bottom: ($spacer / 4) solid $blue
+    border-left: ($spacer / 4) solid $blue
+    border-right: 0
+
+    .section__heading
+      text-align: right
+
+  .section__heading
+    text-align: left
+
+  .section__content
+    max-width: 700px
+    margin-top: $spacer * 2
+
+  .heading
+    margin-top: $spacer
+    font:
+      size: 36px
+      weight: 400
+
+    &--md
+      font-size: 32px
+
+    &--sm
+      font-size: 24px
+
+    &:first-child
+      margin-top: 0
+
+  .text
+    margin-top: $spacer
+    font:
+      size: 20px
+      weight: 400
+
+    &:first-child
+      margin-top: 0
+
+  .list
+    margin-top: $spacer
+    padding-left: $spacer
+    list-style-position: inside
+    font:
+      size: 20px
+      weight: 400
+
+    li
+      margin-top: $spacer
+
+      &:first-child
+        margin-top: 0
+
+    &:first-child
+      margin-top: 0

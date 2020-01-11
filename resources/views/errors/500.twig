@@ -1,0 +1,21 @@
+{% extends 'templates/_default.twig' %}
+
+{% block title %}500 Interner Serverfehler{% endblock %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <section class="text-section animate animate-from-left">
+                <h3 class="section__heading">500 Interner Serverfehler</h3>
+
+                <div class="section__content">
+                    <p class="text">
+                        Sorry! Beim Aufruf der Seite ist leider ein Fehler aufgetreten.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    {% include 'partials/_contact.twig' %}
+{% endblock %}
