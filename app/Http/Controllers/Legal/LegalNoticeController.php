@@ -22,9 +22,9 @@ class LegalNoticeController extends Controller
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function index(Request $request, Response $response)
+    public function __invoke(Request $request, Response $response) : Response
     {
-        $this->view($request, $response, 'legal/legal-notice.twig');
+        $response = $this->view($request, $response, 'legal/legal-notice.twig');
 
         return $response;
     }

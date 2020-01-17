@@ -22,9 +22,9 @@ class HttpNotFoundController extends Controller
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function index(Request $request, Response $response)
+    public function __invoke(Request $request, Response $response) : Response
     {
-        $this->view($request, $response, 'errors/404.twig');
+        $response = $this->view($request, $response, 'errors/404.twig');
 
         return $response;
     }

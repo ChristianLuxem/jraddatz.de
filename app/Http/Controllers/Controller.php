@@ -29,6 +29,7 @@ abstract class Controller
      * Controller constructor.
      *
      * @param Twig $view
+     * @param Config $config
      */
     public function __construct(Twig $view, Config $config)
     {
@@ -40,13 +41,15 @@ abstract class Controller
      * @param Request $request
      * @param Response $response
      * @param string $view
+     * @param array $data
+     * @return Response
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    protected function view(Request $request, Response $response, string $view, array $data = [])
+    protected function view(Request $request, Response $response, string $view, array $data = []) : Response
     {
-        $this->view->render($response, $view, array_merge($data, $this->exposeToView()));
+        return $this->view->render($response, $view, array_merge($data, $this->exposeToView()));
     }
 
     /**
