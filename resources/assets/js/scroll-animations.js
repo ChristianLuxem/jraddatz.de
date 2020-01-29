@@ -14,11 +14,7 @@ window.addEventListener('load', () => {
 
         const elementPosition = element.getBoundingClientRect().top + scrollY + treshold;
 
-        if (scrollPosition > elementPosition || scrollPosition >= bodyHeight - treshold) {
-            return true;
-        }
-
-        return false;
+        return scrollPosition > elementPosition || scrollPosition >= bodyHeight - treshold;
     };
 
     const animate = () => {
